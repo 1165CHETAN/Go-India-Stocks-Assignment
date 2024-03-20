@@ -11,7 +11,10 @@ import {
   LayoutDashboard,
   UsersRound,
   Settings,
-  ChevronRight
+  ChevronRight,
+  Newspaper,
+  TrendingUp,
+  Video
 } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -29,8 +32,11 @@ export default function SideNavbar({}: Props) {
 
   return (
     <div className="relative min-w-[80px] border-r px-3  pb-10 pt-24 ">
+      
       {!mobileWidth && (
+        
         <div className="absolute right-[-20px] top-7">
+          
           <Button
             onClick={toggleSidebar}
             variant="secondary"
@@ -44,27 +50,51 @@ export default function SideNavbar({}: Props) {
         isCollapsed={mobileWidth ? true : isCollapsed}
         links={[
           {
-            title: "Dashboard",
+            title: "Discussion Forum",
             href: "/",
             icon: LayoutDashboard,
             variant: "default"
           },
           {
-            title: "Users",
+            title: "Market Stories",
             href: "/users",
             icon: UsersRound,
             variant: "ghost"
           },
           {
-            title: "Ordrs",
-            href: "/orders",
+            title: "Sentiments",
+            href: "/settings",
             icon: ShoppingCart,
             variant: "ghost"
           },
           {
-            title: "Settings",
-            href: "/settings",
+            title: "Market",
+            href: "/market",
+            icon: TrendingUp,
+            variant: "ghost"
+          },
+          {
+            title: "Sector",
+            href: "/sector",
             icon: Settings,
+            variant: "ghost"
+          },
+          {
+            title: "Watchlist",
+            href: "/watchlist",
+            icon: Video,
+            variant: "ghost"
+          },
+          {
+            title: "Events",
+            href: "/events",
+            icon: Settings,
+            variant: "ghost"
+          },
+          {
+            title: "News/Interview",
+            href: "/news",
+            icon: Newspaper,
             variant: "ghost"
           }
         ]}

@@ -17,7 +17,7 @@ export default function SettingsPage() {
     <img
           width={200}
           height={200}
-          src={`https://api.dicebear.com/8.x/personas/svg?seed=Abby`}
+          src={`https://api.dicebear.com/8.x/personas/svg?seed=Cuddles`}
           alt="avatar"
         />
       <div className="bg-violet-50 p-4 rounded-lg shadow-md">

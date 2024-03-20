@@ -17,12 +17,12 @@ export default function SettingsPage() {
     <img
           width={200}
           height={200}
-          src={`https://api.dicebear.com/8.x/personas/svg?seed=Abby`}
+          src={`https://api.dicebear.com/8.x/personas/svg?seed=Bella`}
           alt="avatar"
         />
-      <div className="bg-violet-50 p-4 rounded-lg shadow-md">
+      <div className="bg-gray-50 p-4 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold">Hey👋</h1>
-        <p className="text-gray-700 mt-2">I'm Chetan. I'm here to crack the code on your assignments! Dive in and explore the README for all the details you need. Let's make this journey enlightening!!</p>
+        <p className="text-gray-700 mt-2">I've recently launched a project dedicated to safeguarding endangered species. Using Astro, I've crafted a captivating blog site to spread awareness. If you're intrigued, take the first step towards sustainability by checking it out!</p>
         
       </div>
     </div>

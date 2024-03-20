@@ -1,7 +1,3 @@
-/** @format */
-
-"use client";
-
 import Link from "next/link";
 import { LucideIcon } from "lucide-react";
 
@@ -34,7 +30,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
         data-collapsed={isCollapsed}
         className="group flex flex-col gap-4 py-2 data-[collapsed=true]:py-2"
       >
-        <nav className="grid gap-1 px-2 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
+        <nav className="grid gap-1 px-4 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
           {links.map((link, index) =>
             isCollapsed ? (
               <Tooltip key={index} delayDuration={0}>
@@ -46,7 +42,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
                         variant: link.href === pathName ? "default" : "ghost",
                         size: "icon"
                       }),
-                      "h-9 w-9",
+                      "h-9 w-9", // Adjust width if needed
                       link.variant === "default" &&
                         "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
                     )}
