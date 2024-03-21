@@ -1,40 +1,31 @@
 /** @format */
 
 import PageTitle from "@/components/PageTitle";
-import { DollarSign, Users, CreditCard, Activity } from "lucide-react";
-import Card, { CardContent, CardProps } from "@/components/Card";
+import Card, { CardProps } from "@/components/Card";
 import SalesCard, { SalesProps } from "@/components/SalesCard";
 
 const cardData: CardProps[] = [
   {
-    label: "Total Revenue",
-    amount: "$45,231.89",
+    
     discription: "Uncover the latest market movements, identify emerging patterns, and seize opportunities in dynamic trading environments with actionable insights.",
-    icon: DollarSign,
     img:"Felix",
     title:"Market Mavericks"
   },
   {
-    label: "Subscriptions",
-    amount: "+2350",
+    
     discription: "Delve into the strategies and stories of trailblazing investors, exploring their unique approaches and the lessons they offer.",
-    icon: Users,
     img:"Aneka",
-    title:"Global Outlook"
+    title:"Global Outlooks"
   },
   {
-    label: "Sales",
-    amount: "+12,234",
+    
     discription: "Learn effective techniques for managing risk and capitalizing on market fluctuations, empowering you to navigate volatile conditions confidently.",
-    icon: CreditCard,
     img:"Ginger",
     title:"Earnings Exposed"
   },
   {
-    label: "Active Now",
-    amount: "+573",
+    
     discription: "Gain valuable perspectives on investment strategies, market trends, and economic developments to inform your decision-making and optimize portfolio performance.",
-    icon: Activity,
     img:"Zoey",
     title:"Tech Disruption"
   }
@@ -95,10 +86,7 @@ export default function Home() {
           {cardData.map((d, i) => (
             <Card
               key={i}
-              amount={d.amount}
               discription={d.discription}
-              icon={d.icon}
-              label={d.label}
               img={d.img}
               title={d.title}
             />
