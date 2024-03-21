@@ -22,7 +22,7 @@ export default function SettingsPage() {
         />
       <div className="bg-violet-50 p-4 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold">Hey👋</h1>
-        <p className="text-gray-700 mt-2">I'm Chetan. I'm here to crack the code on your assignments! Dive in and explore the README for all the details you need. Let's make this journey enlightening!!</p>
+        <p className="text-gray-700 mt-2">I am Chetan. I am here to crack the code on your assignments! Dive in and explore the README for all the details you need. Let make this journey enlightening!!</p>
         
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function SettingsPage() {
         />
       <div className="bg-pink-50 p-4 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold">Hey👋</h1>
-        <p className="text-gray-700 mt-2">I've recently launched a project dedicated to safeguarding endangered species. Using Astro, I've crafted a captivating blog site to spread awareness. If you're intrigued, take the first step towards sustainability by checking it out!</p>
+        <p className="text-gray-700 mt-2">I have recently launched a project dedicated to safeguarding endangered species. Using Astro, I have crafted a captivating blog site to spread awareness. If you are intrigued, take the first step towards sustainability by checking it out!</p>
         
       </div>
     </div>
